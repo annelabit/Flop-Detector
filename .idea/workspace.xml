@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f26a1af-41ae-479d-a9cb-dfe207225106" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/Model_Training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Model_Training.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/boxplot_outliers_boxoffice_blu.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/grafici/boxplot_outliers_boxoffice_blu.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/boxplot_outliers_boxoffice_blu.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/grafici/boxplot_outliers_boxoffice_blu.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1771347216476" duration="9000" />
       <workItem from="1771349419834" duration="2086000" />
       <workItem from="1771424420016" duration="5058000" />
-      <workItem from="1771492666526" duration="9238000" />
+      <workItem from="1771492666526" duration="13244000" />
     </task>
     <servers />
   </component>
@@ -121,11 +118,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb</url>
-          <line>1</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
