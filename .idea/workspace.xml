@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0f26a1af-41ae-479d-a9cb-dfe207225106" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/dataset_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/dataset_features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/dataset_pulito.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/dataset_pulito.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/Model_Training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Model_Training.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/confronto_matrici_confusione.png" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/confronto_matrici_confusione.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +49,12 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\annac\PyCharmMiscProject\Flop-Detector" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\annac\PyCharmMiscProject\Flop-Detector\docs\grafici" />
+      <recent name="C:\Users\annac\PyCharmMiscProject\Flop-Detector\notebooks" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,7 +102,7 @@
       <workItem from="1771349419834" duration="2086000" />
       <workItem from="1771424420016" duration="5058000" />
       <workItem from="1771492666526" duration="18530000" />
-      <workItem from="1771576550128" duration="1498000" />
+      <workItem from="1771576550128" duration="11584000" />
     </task>
     <servers />
   </component>
@@ -112,17 +119,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Flop_Detector$main.coverage" NAME="main Coverage Results" MODIFIED="1771494010277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
