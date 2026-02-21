@@ -1,5 +1,5 @@
 # 🎬 Movie Flop Detector: Previsione del Successo Cinematografico
-<img width="2000" height="2000" alt="Flop-Detector" src="https://github.com/user-attachments/assets/92c7fc09-54a6-4d00-b77a-25b9fd173b5a" />
+<img width="400" alt="Flop-Detector" src="https://github.com/user-attachments/assets/92c7fc09-54a6-4d00-b77a-25b9fd173b5a" />
 Questo progetto di Machine Learning ha l'obiettivo di prevedere se un film sarà un successo commerciale o un flop, utilizzando esclusivamente informazioni disponibili prima dell'uscita nelle sale (budget, generi, cast, regista, stagione di rilascio, ecc.).
 
 Il dataset utilizzato è basato sul **TMDB 5000 Movie Dataset**, integrato e ripulito per estrarre metriche strutturali e finanziarie affidabili.
