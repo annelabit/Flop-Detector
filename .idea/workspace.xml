@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f26a1af-41ae-479d-a9cb-dfe207225106" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/dataset_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/dataset_features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/dataset_pulito.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/dataset_pulito.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/FeatureEngineering.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/Model_Training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Model_Training.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="0f26a1af-41ae-479d-a9cb-dfe207225106" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +95,7 @@
       <workItem from="1771349419834" duration="2086000" />
       <workItem from="1771424420016" duration="5058000" />
       <workItem from="1771492666526" duration="18530000" />
-      <workItem from="1771576550128" duration="11584000" />
+      <workItem from="1771576550128" duration="12241000" />
     </task>
     <servers />
   </component>
