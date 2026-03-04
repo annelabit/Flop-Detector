@@ -3,8 +3,87 @@ import joblib
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
+from PIL import Image
+import base64
 
 st.set_page_config(page_title="Flop Detector", layout="wide")
+
+with open("./logo./Flop-Detector.png", "rb") as f:
+    data = base64.b64encode(f.read()).decode("utf-8")
+
+st.markdown(f"""
+    <style>    
+    .stApp {{
+        background-color: #83c5be;
+        color: #22223b;
+    }}
+    
+    [data-testid="stSidebar"] {{
+        background-color: #006d77;
+    }}
+    
+    [data-testid="stSidebar"] .stMarkdown h2, 
+    [data-testid="stSidebar"] .stMarkdown h1,
+    [data-testid="stSidebar"] label {{
+        color: #ffddd2 !important;
+        font-weight: bold;
+    }}
+
+    .header-container {{
+        background-color: #e29578;
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border: 2px solid #006d77;
+    }}
+    
+    .header-container h1 {{
+        margin: 0;
+        padding-left: 20px;
+        text-align: center;
+    }}
+
+    .stColumn > div {{
+        background-color: #ffddd2;
+        color: #006d77;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+        border: 2px solid #006d77;
+    }}
+    
+    .stColumn label {{
+        color: #006d77 !important;
+        font-weight: 800 !important;
+        font-size: 1.1rem !important;
+    }}
+
+    div.stButton > button:first-child {{
+        background-color: #e29578;
+        color: #006d77;
+        border-radius: 8px;
+        border: 2px solid #006d77;
+        font-weight: bold;
+    }}
+            
+    .stAlert {{
+        border: 3px solid #006d77 !important;
+        border-radius: 15px !important;
+        padding: 20px !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+    }}
+    .stAlert p {{
+        font-size: 1.3rem !important;
+        font-weight: bold !important;
+        color: #006d77 !important;
+    }}
+    </style>
+    """, unsafe_allow_html=True)
 
 #Determina la stagione di uscita
 def get_season(month):
@@ -36,8 +115,11 @@ def get_mappings(df):
 
 dir_map, act_map, comp_map, global_mean = get_mappings(df_pulito)
 
-st.title("Flop Detector")
-st.markdown("Previsione del successo di un film con dati disponibili prima della sua uscita.")
+st.markdown(f"""
+    <div class="header-container">
+        <img src="data:image/png;base64,{data}" width="150" style="border-radius:10px;"> <h1>Flop Detector <br><span style="font-size: 18px; text-align: left; font-weight: normal; font-style: italic;">Data-driven movie success forecasting</span></h1>
+    </div>
+    """, unsafe_allow_html=True)
 
 with st.sidebar:
     st.header("Parametri Tecnici")
@@ -107,23 +189,30 @@ if st.button("Calcola probabilità di successo", use_container_width=True):
         mode = "gauge+number",
         value = prob * 100,
         domain = {'x': [0, 1], 'y': [0, 1]},
-        title = {'text': "Probabilità di Successo %", 'font': {'size': 24}},
+        title = {'text': "Probabilità di Successo %", 'font': {'size': 24, 'color': '#006d77'}},
+        number = {'font': {'color': '#006d77', 'size': 50}}, # Numero scuro e grande
         gauge = {
-            'axis': {'range': [0, 100], 'tickwidth': 1},
-            'bar': {'color': "darkblue"},
+            'axis': {'range': [0, 100], 'tickwidth': 1, 'tickcolor': '#006d77'},
+            'bar': {'color': "#006d77"},
             'steps': [
                 {'range': [0, 45], 'color': "#ff4b4b"},
                 {'range': [45, 65], 'color': "#ffa500"},
                 {'range': [65, 100], 'color': "#00cc96"}]
         }
     ))
-    fig.update_layout(height=350, margin=dict(l=20, r=20, t=50, b=20))
+    
+    fig.update_layout(
+        height=350, 
+        margin=dict(l=20, r=20, t=50, b=20),
+        paper_bgcolor='rgba(0,0,0,0)', 
+        plot_bgcolor='rgba(0,0,0,0)'
+    )
     st.plotly_chart(fig, use_container_width=True)
 
     #Messaggi finali
     if prob > 0.65:
         st.balloons()
-        st.success(f"Il film ha ottime probabilità di essere un successo!.")
+        st.success(f"Il film ha ottime probabilità di essere un successo!")
     elif prob > 0.45:
         st.warning("Il successo di questo film è incerto e dipenderà dal marketing e dalla concorrenza.")
     else:
