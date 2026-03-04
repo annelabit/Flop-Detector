@@ -1,4 +1,4 @@
-# 🎬 Movie Flop Detector: Previsione del Successo Cinematografico
+# 🎬 Flop Detector: Previsione del Successo Cinematografico
 <div align="center">
 <img width="200" alt="Flop-Detector" src="https://github.com/user-attachments/assets/92c7fc09-54a6-4d00-b77a-25b9fd173b5a" />
 </div>
@@ -34,6 +34,9 @@ Il progetto è suddiviso in tre fasi logiche, ognuna documentata in un Jupyter N
 3. Installa le librerie necessarie eseguendo da terminale:
    ```bash
    pip install -r requirements.txt
+4. Per avviare la demo dalla cartella app:
+   ```bash
+   streamlit run app.py
 
 ## 🛠️ Tecnologie Utilizzate
    <div align="left">
